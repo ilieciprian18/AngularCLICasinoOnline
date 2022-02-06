@@ -1,0 +1,12 @@
+{
+    "users":[
+        {
+    "username": "user",
+    "email": "user",
+    "phonenumber": "9999999999",
+    "password": "user",
+    "balance": "500",
+    "id": 10
+        }
+    ]
+}

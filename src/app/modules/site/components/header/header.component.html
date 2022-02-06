@@ -1,0 +1,9 @@
+<nav class = "wow">
+    <h4 class = "logo">Balance: {{this.balance}}</h4>
+    <ul class = "nav_links">
+        <li  routerLinkActive="active" ><a routerLink="./ruleta">Roulette</a></li>
+        <li routerLinkActive="active"><a routerLink="./profile">Profile</a></li>
+        <li routerLinkActive="active"><a routerLink="./contact">Contact</a></li>
+    </ul>
+    <a class = "cta"><button class = "logout" (click)="logout()">Logout</button></a>
+</nav>

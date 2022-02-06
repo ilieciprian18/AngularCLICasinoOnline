@@ -1,0 +1,52 @@
+.center{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+
+  
+  }
+
+
+  .center h1{
+    text-align: center;
+    font-size: 60px;
+
+  }
+
+  .center h2{
+    text-align: center;
+    font-size: 60px;
+  }
+
+  .error-details {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  span {
+    margin: 0 10px;
+}
+
+.error-actions a{
+  display: grid;
+  height: 80px;
+  width: 250px;
+  border-radius: 25px;
+
+  background: #2691d9;
+  font-size: 30px;
+  color: white;
+  letter-spacing: 3px;
+  position: absolute;
+  margin: auto;
+  left : 0;
+  right:  0;
+  place-items: center;
+  text-align: center;
+}
+
+.error-actions a:hover{
+  text-decoration: none;
+}

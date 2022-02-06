@@ -1,0 +1,51 @@
+<div class = "mycontainer">
+    <div class = "split left">
+        <div class = "centered">
+            <canvas #canvas id="canvas" width="500" height="500"></canvas>
+        </div>
+    </div>
+    <div class = "split right">
+        <div class = "centered">
+            <div class ="newForm">
+                <h1>Bets</h1>
+                <form [formGroup]="BetForm" (ngSubmit)="spin()" ngNativeValidate>
+                    <div class = "BetRatio">
+                        <input type="text" pattern="[0-9]+" required id="betAmount" formControlName="bet">
+                        <label>Bet Amount</label>
+                    </div>
+                    <div class = "BetRatio">
+                        <input type="text" pattern="[0-9]+" formControlName="number">
+                        <label>Selected Number</label> 
+                    </div>
+                    <div class = "BetRatio">
+                        <div class = "radioGroup>">
+                            <input type = "radio" name = "colour" value = "red" formControlName = "colour"> Red
+                            <input type = "radio" name = "colour" value = "black" formControlName = "colour"> Black
+                            <input type = "radio" name = "colour" value = "green" formControlName = "colour"> Green 
+                        </div>
+                    </div>
+                    <div class = "BetRatio">
+                        <input type = "radio" name = "EvenOrOdd" value = "even" formControlName = "EvenOrOdd"> Even
+                        <input type = "radio" name = "EvenOrOdd" value = "odd" formControlName = "EvenOrOdd"> Odd
+                    </div>
+                    
+                    <!-- <div class = "TypeOfBet">
+                        <label>Odd or Even</label>
+                        <input type="checkbox"  name="OddOrEven" value = "oddoreven" formControlName = "CheckedEvenOrOdd">
+                        <label>Colour</label>
+                        <input type="checkbox"  name="colour" value = "colour" formControlName = "CheckedColour">
+                        <label>Precise Bet</label>
+                        <input type="checkbox"  name="precise" value = "precise" formControlName ="CheckedPrecise">
+                        
+                    </div> -->
+                    <div>
+                        <input type="submit" value="Place Bet" style="float:left;" id='spin' >
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</div>

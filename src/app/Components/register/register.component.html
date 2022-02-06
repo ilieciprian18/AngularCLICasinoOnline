@@ -1,0 +1,31 @@
+<body>
+    <div class="center">
+      <h1>Sign Up</h1>
+      <form [formGroup]="signupForm" (ngSubmit)="signUp()" ngNativeValidate>
+        <div class="txt_field">
+          <input type="text" required="true" id="username" formControlName="username">
+          <span></span>
+          <label>Username</label>
+        </div>
+        <div class="txt_field">
+            <input type="text" required id="email" formControlName="email">
+            <span></span>
+            <label>Email</label>
+          </div>
+          <div class="txt_field">
+            <input type="text" required minlength="10" maxlength="10" pattern="[0-9]+" title="Please enter the phone number" id="phonenumber" formControlName="phonenumber">
+            <span></span>
+            <label>Phone Number</label>
+          </div>
+        <div class="txt_field">
+          <input type="password" required id="password" formControlName="password">
+          <span></span>
+          <label>Password</label>
+        </div>
+        <input type="submit" value="Sign Up">
+        <div class="signup_link">
+          Already a member? <a routerLink="../login">Login</a>
+        </div>
+      </form>
+    </div>
+</body>
