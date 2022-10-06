@@ -11,7 +11,8 @@ Pentru Json-server pe localhost:3000
 json-server --watch db.json
 ```
 Aplicatia are Login, Register. Utilizatorii nelogati nu pot accesta aplicatia, iar o data ce un utilizator este logat nu mai poate accesta login/register (decat daca se delogheaza)
-Un scurt demo se poate gasi sub forma de video mp4 in fisiere.
+
+####Un scurt demo se poate gasi sub forma de video mp4 in fisiere.
 
 ## Pagina de Login User
 ![image](https://user-images.githubusercontent.com/61537857/194380453-c4063ead-a189-4f10-8ba3-e3eeab3eb682.png)
